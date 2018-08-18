@@ -1,0 +1,26 @@
+@keyframes mySlideInDown {
+  from {
+    transform: translate3d(0, -15%, 0) translate(-50%,-50%);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0) translate(-50%,-50%);
+  }
+}
+.mySlideInDown {
+  animation-name: mySlideInDown;
+}
+
+
+@keyframes mySlideInUp {
+  from {
+    transform: translate3d(0, 120%, 0) translate(-50%,-50%);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0) translate(-50%,-50%);
+  }
+}
+.mySlideInUp {
+  animation-name: mySlideInUp;
+}

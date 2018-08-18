@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'Dense-Regular';
+	src: url("../fonts/Dense-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: 'GOCA LOGOTYPE BETA';
+	src: url("../fonts/GOCA LOGOTYPE BETA.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr-Light';
+	src: url("../fonts/HelveticaNeueCyr-Light.otf") format("opentype");
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr-Medium';
+	src: url("../fonts/HelveticaNeueCyr-Medium.otf") format("opentype");
+}
+
+@font-face {
+	font-family: 'HelveticaNeueCyr-UltraLight';
+	src: url("../fonts/HelveticaNeueCyr-UltraLight.otf") format("opentype");
+}
+
+@font-face {
+	font-family: 'knarfart';
+	src: url("../fonts/knarfart.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'Humongous of Eternity St';
+	src: url("../fonts/Humongous of Eternity St.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'IRANSansWeb';
+	src: url("../fonts/IRANSansWeb.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: 'googleIcon';
+	src: url("../fonts/material-icons-google.woff2") format("WOFF2");
+}
+
+@font-face {
+	font-family: 'MuseoSans_500';
+	src: url("../fonts/MuseoSans_500.otf") format("opentype");
+}

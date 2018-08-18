@@ -1,0 +1,110 @@
+body, p{
+	margin: 0;
+	padding: 0;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+html{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	width: 100%;
+
+	position: fixed;
+	overflow: scroll;
+}
+
+input, button{
+	outline: none;
+}
+
+#wrapper{
+	/* width & height are in ("JS/setWandH.js"); */
+
+	position: relative;
+	z-index: 1;
+}
+
+.separate5{
+	width: 100%;
+	height: 5%;
+}
+
+.floatRight{
+	float: right !important;
+}
+
+.floatLeft{
+	float: left !important;
+}
+
+.hide{
+	display: none !important;
+}
+
+.nav{
+	width: 100%;
+	height: 10%;
+}
+
+.nav .backIconDiv,
+.nav .resetIconDiv,
+.nav .homeIconDiv
+{
+	width: auto;
+	height: 100%;
+
+	display: inline-block;
+	float: left;
+}
+
+.nav .iconNavHolder{
+	/*width is in ("XO pro-main.js");*/
+	height: 100%;
+
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	display: inline-block;
+}
+
+.nav .backIconDiv .iconNavHolder img,
+.nav .resetIconDiv .iconNavHolder img,
+.nav .homeIconDiv .iconNavHolder img
+{
+	width: 50%;
+	height: 50%;
+
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	display: block;
+}
+
+.nav .logoNavDiv{
+	width: 50%;
+	height: 100%;
+
+	display: inline-block;
+	float: left;
+}
+
+.nav .logoNavDiv p{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+
+	font-size: 25px;
+	font-family: 'knarfart';
+	color: white;
+}

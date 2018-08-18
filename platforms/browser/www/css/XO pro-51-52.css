@@ -1,0 +1,223 @@
+#page-51{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	z-index: 2;
+	/* It's hidden in ("XO pro-main.js") */
+	/*display: block !important;*/
+
+	background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+
+#page-52{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	z-index: 2;
+	/* It's hidden in ("XO pro-main.js") */
+	/*display: none !important;*/
+
+	background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
+}
+
+.lightBg{
+	background: linear-gradient(to bottom, #D5DEE7 0%, #E8EBF2 50%, #E2E7ED 100%), linear-gradient(to bottom, rgba(0,0,0,0.02) 50%, rgba(255,255,255,0.02) 61%, rgba(0,0,0,0.02) 73%), linear-gradient(33deg, rgba(255,255,255,0.20) 0%, rgba(0,0,0,0.20) 100%) !important;
+	background-blend-mode: normal , color-burn !important;
+}
+
+.horLineTable{
+	width: 100%;
+	height: 1.5%;
+
+	border-radius: 20px;
+
+	background-color: white;
+}
+
+.verLineTable{
+	width: 1.5%;
+	height: 100%;
+
+	display: inline-block;
+	float: left;
+
+	border-radius: 20px;
+
+	background-color: white;
+}
+
+#page-51 #I-gamePlay,
+#page-52 #II-gamePlay
+{
+	width: 100%;
+	height: 90%;
+}
+
+#page-51 #I-gamePlay .gameTableDiv,
+#page-52 #II-gamePlay .gameTableDiv
+{
+	width: 100%;
+	height: 75%;
+}
+
+#page-51 #I-gamePlay .gameTableDiv .mainGameTable,
+#page-52 #II-gamePlay .gameTableDiv .mainGameTable
+{
+	width: 90%;
+	/*height is the same as width*/
+
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#page-51 #I-gamePlay .gameTableDiv .mainGameTable .row,
+#page-52 #II-gamePlay .gameTableDiv .mainGameTable .row
+{
+	width: 100%;
+	height: 31.16%;
+}
+
+#page-51 #I-gamePlay .gameTableDiv .mainGameTable .row .cell,
+#page-52 #II-gamePlay .gameTableDiv .mainGameTable .row .cell{
+	width: 31.16%;
+	height: 100%;
+
+	display: inline-block;
+	float: left;
+}
+
+#page-51 #I-gamePlay .gameTableDiv .mainGameTable .row .cell .xoIcon,
+#page-52 #II-gamePlay .gameTableDiv .mainGameTable .row .cell .xoIcon
+{
+	width: 40%;
+	height: 40%;
+
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#page-51 #I-gamePlay .resultDiv,
+#page-52 #II-gamePlay .resultDiv{
+	width: 100%;
+	height: 25%;
+}
+
+#page-51 #I-gamePlay .resultDiv .eachPlayerPart,
+#page-52 #II-gamePlay .resultDiv .eachPlayerPart{
+	width: 100%;
+	height: 50%;
+}
+
+#page-51 #I-gamePlay .resultDiv .eachPlayerPart .XorO,
+#page-52 #II-gamePlay .resultDiv .eachPlayerPart .XorO
+{
+	/*width is the same as height*/
+	height: 100%;
+
+	display: inline-block;
+	float: left;
+}
+
+#page-51 #I-gamePlay .resultDiv .eachPlayerPart .XorO p,
+#page-52 #II-gamePlay .resultDiv .eachPlayerPart .XorO p{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+
+	font-size: 25px;
+	font-family: 'HelveticaNeueCyr-Light';
+	color: white;	
+}
+
+
+#page-51 #I-gamePlay .resultDiv .eachPlayerPart .conditionPart,
+#page-52 #II-gamePlay .resultDiv .eachPlayerPart .conditionPart{
+	width: 7px;
+	height: 95%;
+
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+
+	background-color: white;
+
+	border-radius: 20px;
+}
+
+	#page-51 #I-gamePlay .resultDiv .eachPlayerPart .conditionPart,
+	#page-52 #II-gamePlay .resultDiv #realPlayerTwoPart .conditionPart{
+		display: none;
+	}
+
+#page-51 #I-gamePlay .resultDiv .eachPlayerPart .playerNamePart,
+#page-52 #II-gamePlay .resultDiv .eachPlayerPart .playerNamePart{
+	/*width is the rest of two next divs*/
+	height: 100%;
+
+	display: inline-block;
+	float: left;
+}
+
+#page-51 #I-gamePlay .resultDiv .eachPlayerPart .playerNamePart p,
+#page-52 #II-gamePlay .resultDiv .eachPlayerPart .playerNamePart p{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: right;
+
+	margin: 0 10px;
+
+	font-size: 20px;
+	font-family: 'HelveticaNeueCyr-Medium', 'IRANSansWeb';
+	color: white;
+}
+
+#page-51 .rotatePhone,
+#page-52 .rotatePhone{
+	width: 100%;
+	height: 100%;
+
+	display: none;
+}
+
+#page-51 .rotatePhone .upperDiv
+#page-52 .rotatePhone .upperDiv{
+	width: 100%;
+	height: 80%;
+}
+
+#page-51 .rotatePhone .upperDiv img,
+#page-52 .rotatePhone .upperDiv img{
+	width: 200px;
+	height: 200px;
+
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#page-51 .rotatePhone .downerDiv,
+#page-51 .rotatePhone .downerDiv{
+	width: 100%;
+	height: 20%;
+}
+
+#page-51 .rotatePhone .downerDiv p,
+#page-52 .rotatePhone .downerDiv p{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+
+	font-size: 20px;
+	font-family: 'IRANSansWeb';
+	color: #fd6c6c;
+}
