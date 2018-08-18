@@ -1,14 +1,14 @@
 # XO pro
 
-## How to see the game
+## How to run the game
 
-### Web Game
+### Web Game (html file)
 
 In your browser, open the file:
 
     /www/index.html
 
-Note: You have to resize the browser window to something like a phone screen.
+Note: You have to resize the browser window to something like a phone screen. It hasn't been responsive yet.
 
 ### APK File
 
