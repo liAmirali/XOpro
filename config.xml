@@ -18,6 +18,9 @@
   </author>
    
   <icon src="icon.png" />
+
+  <!-- www/ will be automatically added to the path -->
   <content src="index.html" />
+
   <access origin="*" />
 </widget>
