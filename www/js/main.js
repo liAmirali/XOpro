@@ -2,19 +2,8 @@
 
 $('#page-31 , #page-32').show();
 
-if(width < height){
-	var navH = $('.nav').height();
-	$('.nav .iconNavHolder').css('width', navH + "px");
-}
-else{
-	//	in code 10% Width ro migire
-	//	( be jaye gereftan 10% Height | css:.nav{height = 10%} )
-	//	baraye handle kardane andazeye icon Home va Back 
-	//	ba'd az show shodan safheye .rotatePhone
-	var temp = 10/100;
-	temp = temp * width;
-	$('.nav .iconNavHolder').css('width', temp + "px");
-}
+var navH = $('.nav').height();
+$('.nav .iconNavHolder').css('width', navH + "px");
 
 $('#page-31 , #page-32').hide();
 
