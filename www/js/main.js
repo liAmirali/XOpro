@@ -60,11 +60,9 @@ setTimeout( function() {
 // page-2 >>>
 
 var playMode = 0;
-console.log('playMode : ' + playMode);
 
 $('#page-2 #onePlayer').click(function() {
 	playMode = 1;
-	console.log('playMode : ' + playMode);
 
 	$('#page-31').show();
 
@@ -107,7 +105,6 @@ $('#page-2 #onePlayer').click(function() {
 var isPage32AnimationRunned = 0; //Line 122 and 270
 $('#page-2 #twoPlayer').click(function() {
 	playMode = 2;
-	console.log('playMode : ' + playMode);
 
 	$('#page-32').show();
 
@@ -167,7 +164,6 @@ $('#page-31 .nav .backIconDiv .iconNavHolder').click(function(){
 
 	setTimeout(function(){
 		playMode = 0;
-		console.log('playMode : ' + playMode);
 
 		$('#page-31').hide();
 	}, 1000);
@@ -197,7 +193,6 @@ $('#page-31 .nav .homeIconDiv .iconNavHolder').click(function(){
 
 	setTimeout(function(){
 		playMode = 0;
-		console.log('playMode : ' + playMode);
 
 		$('#page-31').hide();
 	}, 1000);
@@ -218,12 +213,9 @@ $('#page-31 .nav .homeIconDiv .iconNavHolder').click(function(){
 
 $('#page-31 #nextBtnEnterName button').click(function(){
 	var IplayerOneName = $('#page-31 #inputEnterName input').val();
-	console.log('IplayerOneName : ' + IplayerOneName)
 	$('.IplayerOneNameP').text(IplayerOneName);
 
 	if(IplayerOneName === ""){
-		console.log('IplayerOneName input is EMPTY')
-
 		$('#page-31 #enterNameDiv input').css('border-bottom-color','#f03434');
 		setTimeout(function(){
 			$('#page-31 #enterNameDiv input').css('border-bottom-color','white');
@@ -263,7 +255,6 @@ $('#page-31 #nextBtnEnterName button').click(function(){
 // page-32 >>>
 
 var nameInput = 1;
-console.log('nameInput : ' + nameInput);
 
 $('#page-32 .nav .backIconDiv .iconNavHolder').click(function(){
 	if(nameInput === 1){
@@ -273,7 +264,6 @@ $('#page-32 .nav .backIconDiv .iconNavHolder').click(function(){
 
 		setTimeout(function(){
 			playMode = 0;
-			console.log('playMode : ' + playMode);
 
 			$('#page-32').hide();
 		}, 1000);
@@ -296,7 +286,6 @@ $('#page-32 .nav .backIconDiv .iconNavHolder').click(function(){
 		}, 1500);
 
 		nameInput = 1;
-		console.log('nameInput : ' + nameInput);
 	}
 	else{
 		if(isPage32AnimationRunned === 1){
@@ -318,7 +307,6 @@ $('#page-32 .nav .backIconDiv .iconNavHolder').click(function(){
 		}, 200)
 
 		nameInput = 1;
-		console.log('nameInput : ' + nameInput);
 	}
 });
 
@@ -338,13 +326,11 @@ $('#page-32 .nav .homeIconDiv .iconNavHolder').click(function(){
 			}, 200)
 
 			nameInput = 1;
-			console.log('nameInput : ' + nameInput);
 		}, 1000);
 	}
 
 	setTimeout(function(){
 		playMode = 0;
-		console.log('playMode : ' + playMode);
 
 		$('#page-32').hide();
 	}, 1000);
@@ -366,11 +352,9 @@ $('#page-32 .nav .homeIconDiv .iconNavHolder').click(function(){
 $('#page-32 #nextBtnEnterName button').click(function(){
 	if(nameInput === 1){
 		var IIplayerOneName = $('#page-32 #playerOneEnterName input').val();
-		console.log('IIplayerOneName : ' + IIplayerOneName);
 		$('.IIplayerOneNameP').text(IIplayerOneName);
 
 		if(IIplayerOneName === ""){
-			console.log('IIplayerOneName input is EMPTY');
 			$('#page-32 #enterNameDiv #playerOneEnterName input').css('border-bottom-color','#f03434');
 		}
 		else{
@@ -387,23 +371,19 @@ $('#page-32 #nextBtnEnterName button').click(function(){
 			}, 350)
 
 			nameInput = 2;
-			console.log('nameInput : ' + nameInput);
 		}
 	}
 	else{
 		var IIplayerTwoName = $('#page-32 #playerTwoEnterName input').val();
-		console.log('IIplayerTwoName : ' + IIplayerTwoName);
 		$('.IIplayerTwoNameP').text(IIplayerTwoName);
 
 		if(IIplayerTwoName === ""){
-			console.log('IIplayerTwoName input is EMPTY');
 			$('#page-32 #enterNameDiv #playerTwoEnterName input').css('border-bottom-color','#f03434');
 		}
 		else{
 			$('#page-32 #enterNameDiv #playerTwoEnterName input').css('border-bottom-color','white');
 
 			$('#page-42').show();
-			console.log("page-42 has shown up");
 
 			$('#page-32 #enterNameDiv #playerTwoEnterName').removeClass('slideInRight');
 
@@ -433,8 +413,6 @@ $('#page-32 #nextBtnEnterName button').click(function(){
 // page-41 >>>
 
 $('#page-41 .nav .backIconDiv .iconNavHolder').click(function(){
-	console.log('BACK button in page-41 pressed');
-
 	$('#page-31').show();
 	$('#page-31').removeClass('slideOutDown');
 	$('#page-31').addClass('slideInUp');
@@ -454,8 +432,6 @@ $('#page-41 .nav .backIconDiv .iconNavHolder').click(function(){
 });
 
 $('#page-41 .nav .homeIconDiv .iconNavHolder').click(function(){
-	console.log('HOME button in page-41 pressed');
-
 	$('#page-2').show();
 	$('#page-2').removeClass('slideOutDown');
 	$('#page-2').addClass('slideInUp');
@@ -464,7 +440,6 @@ $('#page-41 .nav .homeIconDiv .iconNavHolder').click(function(){
 
 	setTimeout(function() {
 		playMode = 0;
-		console.log('playMode : ' + playMode);
 
 		$('#page-41').hide();
 	}, 1000);
@@ -499,10 +474,7 @@ $('#page-41 .readyBtnDiv button').click(function(){
 // page-42 >>>
 
 $('#page-42 .nav .backIconDiv .iconNavHolder').click(function(){
-	console.log('BACK button in page-42 pressed');
-
 	// nameInput = 1;
-	// console.log('nameInput : ' + nameInput)
 
 	$('#page-32').show();
 	$('#page-32').removeClass('slideOutDown');
@@ -514,7 +486,6 @@ $('#page-42 .nav .backIconDiv .iconNavHolder').click(function(){
 });
 
 $('#page-42 .nav .homeIconDiv .iconNavHolder').click(function() {
-	console.log('BACK button in page-42 pressed');
 
 	$('#page-2').show();
 	$('#page-2').removeClass('slideOutDown');
@@ -531,13 +502,11 @@ $('#page-42 .nav .homeIconDiv .iconNavHolder').click(function() {
 			}, 200)
 
 			nameInput = 1;
-			console.log('nameInput : ' + nameInput);
 		}, 1000);
 	}
 
 	setTimeout(function() {
 		playMode = 0;
-		console.log('playMode : ' + playMode);
 
 		$('#page-42').hide();
 	}, 1000);
@@ -557,8 +526,6 @@ $('#page-42 .nav .homeIconDiv .iconNavHolder').click(function() {
 });
 
 $('#page-42 .readyBtnDiv button').click(function(){
-	console.log("BuTtOn in page-42 PRESSED")
-
 	$('#page-52').show();
 
 	$('#page-42').removeClass('slideInDown');
@@ -623,7 +590,6 @@ $('#page-51 .nav .homeIconDiv .iconNavHolder').click(function(){
 
 	setTimeout(function() {
 		playMode = 0;
-		console.log('playMode : ' + playMode);
 
 		$('#page-51').hide();
 	}, 1000);
@@ -672,7 +638,6 @@ $('#page-52 .nav .homeIconDiv .iconNavHolder').click(function(){
 
 	setTimeout(function() {
 		playMode = 0;
-		console.log('playMode : ' + playMode);
 
 		$('#page-52').hide();
 	}, 1000);
