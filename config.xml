@@ -23,8 +23,6 @@
 
   <access origin="*" />
 
-  <!-- Hides the Status Bar -->
-  <preference name="Fullscreen" value="true" />
   <!-- Prevent the app to switch to landscape view -->
   <preference name="orientation" value="portrait" />
 </widget>
