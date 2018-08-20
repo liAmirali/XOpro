@@ -1,6 +1,12 @@
+var width = window.innerWidth;
+var height = window.innerHeight;
+$('#wrapper').css({
+	'width': width + "px",
+	'height': height + "px"
+});
 setInterval(function(){
-	const width = window.innerWidth
-	const height = window.innerHeight
+	width = window.innerWidth;
+	height = window.innerHeight;
 	$('#wrapper').css({
 		'width': width + "px",
 		'height': height + "px"
