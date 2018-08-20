@@ -12,4 +12,6 @@ Note: You have to resize the browser window to something like a phone screen. It
 
 ### APK File
 
-It hasn't been on any stores yet. But as soon as I upload the APK File somewhere, I'll tell ya.
+You can download the apk file from here:
+
+[a link](https://github.com/liAmirali/XOproMore/XOpro.apk)
