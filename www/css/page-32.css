@@ -76,7 +76,7 @@
 
 #page-32 #enterNameDiv .holder #inputEnterName input::placeholder{
 	color: black;
-	opacity: 0.6;
+	opacity: 0.4;
 }
 
 #page-32 #enterNameDiv .holder #inputEnterName input:focus{
