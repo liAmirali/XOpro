@@ -12,4 +12,4 @@ Note: You have to resize the browser window to something like a phone screen. It
 
 ### APK File
 
-It hasn't been on any stores yet. But whenever I uploaded the APK File somewher, I will tell you.
+It hasn't been on any stores yet. But whenever I uploaded the APK File somewhere, I will tell you.
