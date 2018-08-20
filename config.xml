@@ -9,7 +9,7 @@
   <name>XO pro</name>
 
   <description>
-      XO pro 1.0.0
+      XO pro v1.0.0
   </description>
 
   <author href="https://instagram.com/liamirali" email="liamirali.lotfi@gmail.com">
@@ -24,7 +24,7 @@
   <access origin="*" />
 
   <!-- Hides the Status Bar -->
-  <preference name="Fullscreen" value="true" />
+  <preference name="StatusBarOverlaysWebView" value="true" />
   <!-- Prevent the app to switch to landscape view -->
   <preference name="orientation" value="portrait" />
 </widget>
