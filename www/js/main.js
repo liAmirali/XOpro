@@ -1,5 +1,5 @@
-const width = window.innerWidth
-const height = window.innerHeight
+const width = window.innerWidth;
+const height = window.innerHeight;
 
 // nav >>>
 
