@@ -4,7 +4,6 @@
     id          = "com.liamirali.xopro"
     versionCode = "10"
     version     = "1.0.0" >
-
 <!-- versionCode is optional and Android only -->
 
   <name>XO pro</name>
@@ -24,5 +23,8 @@
 
   <access origin="*" />
 
+  <!-- Hides the Status Bar -->
   <preference name="Fullscreen" value="true" /> 
+  <!-- Prevent the app to switch to landscape view -->
+  <preference name="orientation" value="portrait" />
 </widget>
