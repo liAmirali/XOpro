@@ -1,10 +1,5 @@
-<<<<<<< HEAD
 var width = window.innerWidth;
 var height = window.innerHeight;
-=======
-const width = window.innerWidth;
-const height = window.innerHeight;
->>>>>>> 1d989feb726fed3f0959469893aa7986e54f65be
 
 // nav >>>
 
