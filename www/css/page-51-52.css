@@ -4,8 +4,8 @@
 
 	position: absolute;
 	z-index: 2;
-	/* It's hidden in ("XO pro-main.js") */
-	/*display: block !important;*/
+	/* It's been hidden in ("XO pro-main.js") */
+
 
 	background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
 }
@@ -16,8 +16,7 @@
 
 	position: absolute;
 	z-index: 2;
-	/* It's hidden in ("XO pro-main.js") */
-	/*display: none !important;*/
+	/* It's been hidden in ("XO pro-main.js") */
 
 	background-image: linear-gradient(-20deg, #fc6076 0%, #ff9a44 100%);
 }

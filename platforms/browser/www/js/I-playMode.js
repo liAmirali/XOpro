@@ -36,11 +36,13 @@ function doTurnX(num028, cellId){
 			table_I[num028] = 1;
 			filled_I[num028] = 1;
 
-			isDraw_I();
+			checkDraw_I();
 			checkWinX_I();
 
-			turn_I = 2;
-			attO();
+			if(isPlaying_I == 1){
+				turn_I = 2;
+				attO();
+			}
 		}
 	});
 }
@@ -52,193 +54,144 @@ function attO() {
 			table_I[2] = 2;
 			filled_I[2] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I);
 	}
 	else if(table_I[1] == 2 && table_I[2] == 2 && filled_I[0] == 0){
 			cell0_I.html(o);
 			table_I[0] = 2;
 			filled_I[0] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I);
 	}
 	else if(table_I[0] == 2 && table_I[2] == 2 && filled_I[1] == 0){
 			cell1_I.html(o);
 			table_I[1] = 2;
 			filled_I[1] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[3] == 2 && table_I[4] == 2 && filled_I[5] == 0){
 			cell5_I.html(o);
 			table_I[5] = 2;
 			filled_I[5] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[4] == 2 && table_I[5] == 2 && filled_I[3] == 0){
 			cell3_I.html(o);
 			table_I[3] = 2;
 			filled_I[3] =1
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[3] == 2 && table_I[5] == 2 && filled_I[4] == 0){
 			cell4_I.html(o);
 			table_I[4] = 2;
 			filled_I[4] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[6] == 2 && table_I[7] == 2 && filled_I[8] == 0){
 			cell8_I.html(o);
 			table_I[8] = 2;
 			filled_I[8] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[7] == 2 && table_I[8] == 2 && filled_I[6] == 0){
 			cell6_I.html(o);
 			table_I[6] = 2;
 			filled_I[6] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[6] == 2 && table_I[8] == 2 && filled_I[7] == 0){
 			cell7_I.html(o);
 			table_I[7] = 2;
 			filled_I[7] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[0] == 2 && table_I[3] == 2 && filled_I[6] == 0){
 			cell6_I.html(o);
 			table_I[6] = 2;
 			filled_I[6] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[3] == 2 && table_I[6] == 2 && filled_I[0] == 0){
 			cell0_I.html(o);
 			table_I[0] = 2;
 			filled_I[0] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[0] == 2 && table_I[6] == 2 && filled_I[3] == 0){
 			cell3_I.html(o);
 			table_I[3] = 2;
 			filled_I[3] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[1] == 2 && table_I[4] == 2 && filled_I[7] == 0){
 			cell7_I.html(o);
 			table_I[7] = 2;
 			filled_I[7] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[4] == 2 && table_I[7] == 2 && filled_I[1] == 0){
 			cell1_I.html(o);
 			table_I[1] = 2;
 			filled_I[1] = 2;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[1] == 2 && table_I[7] == 2 && filled_I[4] == 0){
 			cell4_I.html(o);
 			table_I[4] = 2;
 			filled_I[4] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[2] == 2 && table_I[5] == 2 && filled_I[8] == 0){
 			cell8_I.html(o);
 			table_I[8] = 2;
 			filled_I[8] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[5] == 2 && table_I[8] == 2 && filled_I[2] == 0){
 			cell2_I.html(o);
 			table_I[2] = 2;
 			filled_I[2] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[2] == 2 && table_I[8] == 2 && filled_I[5] == 0){
 			cell5_I.html(o);
 			table_I[5] = 2;
 			filled_I[5] = 2;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[0] == 2 && table_I[4] == 2 && filled_I[8] == 0){
 			cell8_I.html(o);
 			table_I[8] = 2;
 			filled_I[8] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[4] == 2 && table_I[8] == 2 && filled_I[0] == 0){
 			cell0_I.html(o);
 			table_I[0] = 2;
 			filled_I[0] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[0] == 2 && table_I[8] == 2 && filled_I[4] == 0){
 			cell4_I.html(o);
 			table_I[4] = 2;
 			filled_I[4] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[2] == 2 && table_I[4] == 2 && filled_I[6] == 0){
 			cell6_I.html(o);
 			table_I[6] = 2;
 			filled_I[6] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[4] == 2 && table_I[6] == 2 && filled_I[2] == 0){
 			cell2_I.html(o);
 			table_I[2] = 2;
 			filled_I[2] = 1;
 			checkWinO_I();
-			turn_I = 1;
-			console.log("table_I: " + table_I);
 	}
 	else if(table_I[2] == 2 && table_I[6] == 2 && filled_I[4] == 0){
 			cell4_I.html(o);
 			table_I[4] = 2;
 			filled_I[4] = 1
 			checkWinO_I();
-
-			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else{
 		defO();
@@ -251,265 +204,242 @@ function defO(){
 			cell2_I.html(o);
 			table_I[2] = 2;
 			filled_I[2] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[1] == 1 && table_I[2] == 1 && filled_I[0] == 0){
 			cell0_I.html(o);
 			table_I[0] = 2;
 			filled_I[0] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[0] == 1 && table_I[2] == 1 && filled_I[1] == 0){
 			cell1_I.html(o);
 			table_I[1] = 2;
 			filled_I[1] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[3] == 1 && table_I[4] == 1 && filled_I[5] == 0){
 			cell5_I.html(o);
 			table_I[5] = 2;
 			filled_I[5] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[4] == 1 && table_I[5] == 1 && filled_I[3] == 0){
 			cell3_I.html(o);
 			table_I[3] = 2;
 			filled_I[3] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[3] == 1 && table_I[5] == 1 && filled_I[4] == 0){
 			cell4_I.html(o);
 			table_I[4] = 2;
 			filled_I[4] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[6] == 1 && table_I[7] == 1 && filled_I[8] == 0){
 			cell8_I.html(o);
 			table_I[8] = 2;
 			filled_I[8] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[7] == 1 && table_I[8] == 1 && filled_I[6] == 0){
 			cell6_I.html(o);
 			table_I[6] = 2;
 			filled_I[6] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[6] == 1 && table_I[8] == 1 && filled_I[7] == 0){
 			cell7_I.html(o);
 			table_I[7] = 2;
 			filled_I[7] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[0] == 1 && table_I[3] == 1 && filled_I[6] == 0){
 			cell6_I.html(o);
 			table_I[6] = 2;
 			filled_I[6] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[3] == 1 && table_I[6] == 1 && filled_I[0] == 0){
 			cell0_I.html(o);
 			table_I[0] = 2;
 			filled_I[0] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[0] == 1 && table_I[6] == 1 && filled_I[3] == 0){
 			cell3_I.html(o);
 			table_I[3] = 2;
 			filled_I[3] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[1] == 1 && table_I[4] == 1 && filled_I[7] == 0){
 			cell7_I.html(o);
 			table_I[7] = 2;
 			filled_I[7] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[4] == 1 && table_I[7] == 1 && filled_I[1] == 0){
 			cell1_I.html(o);
 			table_I[1] = 2;
 			filled_I[1] = 1;
 			turn_I = 1;
-			isDraw_I();
-			checkWinO_I();
-			console.log("table_I: " + table_I)
+			checkDraw_I();
 	}
 	else if(table_I[1] == 1 && table_I[7] == 1 && filled_I[4] == 0){
 			cell4_I.html(o);
 			table_I[4] = 2;
 			filled_I[4] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[2] == 1 && table_I[5] == 1 && filled_I[8] == 0){
 			cell8_I.html(o);
 			table_I[8] = 2;
 			filled_I[8] = 2;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[5] == 1 && table_I[8] == 1 && filled_I[2] == 0){
 			cell2_I.html(o);
 			table_I[2] = 2;
 			filled_I[2] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[2] == 1 && table_I[8] == 1 && filled_I[5] == 0){
 			cell5_I.html(o);
 			table_I[5] = 2;
 			filled_I[5] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[0] == 1 && table_I[4] == 1 && filled_I[8] == 0){
 			cell8_I.html(o);
 			table_I[8] = 2;
 			filled_I[8] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[4] == 1 && table_I[8] == 1 && filled_I[0] == 0){
 			cell0_I.html(o);
 			table_I[0] = 2;
 			filled_I[0] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[0] == 1 && table_I[8] == 1 && filled_I[4] == 0){
 			cell4_I.html(o);
 			table_I[4] = 2;
 			filled_I[4] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[2] == 1 && table_I[4] == 1 && filled_I[6] == 0){
 			cell6_I.html(o);
 			table_I[6] = 2;
 			filled_I[6] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I)
 	}
 	else if(table_I[4] == 1 && table_I[6] == 1 && filled_I[2] == 0){
 			cell2_I.html(o);
 			table_I[2] = 2;
 			filled_I[2] = 1;
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I);
 	}
 	else if(table_I[2] == 1 && table_I[6] == 1 && filled_I[4] == 0){
 			cell4_I.html(o);
 			table_I[4] = 2;
 			filled_I[4] = 1
-			isDraw_I();
-			checkWinO_I();
+			checkDraw_I();
 			turn_I = 1;
-			console.log("table_I: " + table_I);
 	}
 	else{
-		if(isPlaying_I == 1){
+		generateRndmCell();
+	}
+}
+
+function generateRndmCell() {
+	if(isPlaying_I == 1){
+		randomEmptyCell();
+		function randomEmptyCell(){
 			var randomNum = Math.floor(Math.random() * 9);
-			randomTableDef(randomNum);
-			function randomTableDef(randomNum){
-				if(filled_I[randomNum] == 0){
-					$(`#I-gamePlay #${randomNum}-cell`).html(o);
-					table_I[randomNum] = 2;
-					filled_I[randomNum] = 1;
-					isDraw_I();
-					checkWinO_I;
-					turn_I = 1;
-					console.log("table_I: " + table_I);
+			if(filled_I[randomNum] == 0){
+				doTurnRndmO(randomNum);
+				return randomNum;
+			}
+			else{
+				if(checkDraw_I() == true){
+					isPlaying_I = 0;
+					$('#I-gamePlay .conditionPart').show();
+					$('#I-gamePlay #realPlayerPart .conditionPart').css({
+						'background-color': '#ffffff'
+					});
+					$('#I-gamePlay #computerPart .conditionPart').css({
+						'background-color': '#ffffff'
+					});
+					$('#I-gamePlay #realPlayerPart .XorO p').css({
+						'color': '#ffffff'
+					});
+					$('#I-gamePlay #computerPart .XorO p').css({
+						'color': '#ffffff'
+					});
 				}
 				else{
-					isDraw_I();
+					randomEmptyCell();
 				}
 			}
+		}
+		function doTurnRndmO(randomNum){
+			$(`#I-gamePlay #${randomNum}-cell`).html(o);
+			table_I[randomNum] = 2;
+			filled_I[randomNum] = 1;
+			checkDraw_I();
+			turn_I = 1;
 		}
 	}
 }
 
-function isDraw_I(){
+function checkDraw_I(){
 	var draw = true;
 	for (i = 0 ; i < 9 ; i++) {
 		if (filled_I[i] == 0) {
 			draw = false;
 			break;
+			return false;
 		}
 	}
 	if (draw == true){
 		isPlaying_I = 0;
-		console.log("Draw!");
 
 		$('#I-gamePlay .conditionPart').show();
-		$('#I-gamePlay #playerOnePart .conditionPart').css({
+		$('#I-gamePlay #realPlayerPart .conditionPart').css({
 			'background-color': '#ffffff'
 		});
 		$('#I-gamePlay #computerPart .conditionPart').css({
 			'background-color': '#ffffff'
 		});
-		$('#I-gamePlay #playerOnePart .XorO p').css({
+		$('#I-gamePlay #realPlayerPart .XorO p').css({
 			'color': '#ffffff'
 		});
 		$('#I-gamePlay #computerPart .XorO p').css({
 			'color': '#ffffff'
 		});
+		return true;
 	}
 }
 
@@ -525,13 +455,13 @@ function checkWinX_I(){
 	{
 
 		$('#I-gamePlay .conditionPart').show();
-		$('#I-gamePlay #playerOnePart .conditionPart').css({
+		$('#I-gamePlay #realPlayerPart .conditionPart').css({
 			'background-color': '#00B16A' //green
 		});
 		$('#I-gamePlay #computerPart .conditionPart').css({
 			'background-color': '#D91E18' //red
 		});
-		$('#I-gamePlay #playerOnePart .XorO p').css({
+		$('#I-gamePlay #realPlayerPart .XorO p').css({
 			'color': '#00B16A' //green
 		});
 		$('#I-gamePlay #computerPart .XorO p').css({
@@ -543,7 +473,6 @@ function checkWinX_I(){
 		}
 		isPlaying_I = 0;
 		winner_I = 'x';
-		console.log("X wins!");
 	 	return true;
 	} 
 	else{
@@ -571,7 +500,7 @@ function checkWinO_I(){
 		$('#I-gamePlay #computerPart .XorO p').css({
 			'color': '#00B16A' //green
 		});
-		$('#I-gamePlay #playerOnePart .XorO p').css({
+		$('#I-gamePlay #realPlayerPart .XorO p').css({
 			'color': '#D91E18' //red
 		});
 
@@ -580,7 +509,6 @@ function checkWinO_I(){
 		}
 		isPlaying_I = 0;
 		winner_I = 'o';
-		console.log("O wins!");
 		return true;
 	}
 	else{
@@ -621,10 +549,9 @@ function reset_I(){
 			defO();
 		}
 	}
-	console.log('turn_I is : ' + turn_I);
 
 	$('#I-gamePlay .conditionPart').hide();
-	$('#I-gamePlay #computerPart .XorO p, #I-gamePlay #playerOnePart .XorO p').css({
+	$('#I-gamePlay #computerPart .XorO p, #I-gamePlay #realPlayerPart .XorO p').css({
 		'color': '#ffffff'
 	});
 }

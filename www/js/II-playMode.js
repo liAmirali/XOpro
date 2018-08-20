@@ -41,39 +41,37 @@ function doTurn(num028, cellId){
 				isPlaying_II = 1;
 
 				filled_II[num028] = 1;
-				console.log('filled_II : ' + filled_II);
 				table_II[num028] = 1;
-				console.log('table_II : ' + table_II);
+				console.log("table_II : " + table_II);
 				cellId.html(x);
 
-				isDraw_II();
 				checkWinX_II();
+				checkDraw_II();
 
-				turn_II = 2;
-				setConditionLine();
-				console.log('turn_II : ' + turn_II);
+				if(isPlaying_II == 1){
+					turn_II = 2;
+					setConditionLine();
+				}
 			}
 			else{ // turn_II is 2 "O"
 				isPlaying_II = 1;
 
 				filled_II[num028] = 1;
 				table_II[num028] = 2;
+				console.log("table_II : " + table_II);
 				cellId.html(o);
 
-				isDraw_II();
 				checkWinO_II();	
+				checkDraw_II();
 
-				turn_II = 1;
-				setConditionLine();
-				console.log('turn_II : ' + turn_II);
+				if(isPlaying_II == 1){
+					turn_II = 1;
+					setConditionLine();
+				}
 			}
 		}
 	});
 }
-
-
-
-
 
 function checkWinX_II() {
 	if (table_II[0] == 1 && table_II[1] == 1 && table_II[2] == 1 ||
@@ -116,80 +114,26 @@ function checkWinO_II() {
 		setConditionLine();
 		return true;
 	}
-	else{
-		
+	else{	
 		return false;
 	}
 }
 
-function isDraw_II() {
+function checkDraw_II() {
 	draw = true;
 	for (i = 0 ; i < 9 ; i++) {
 		if (table_II[i] == 0) {
 			draw = false;
-			break
-		} 		
+			break;
+		}
 	}
 	if (draw == true){
 		console.log("Draw!");
 		isPlaying_II = 0;
-		winner_II == 'draw'
+		winner_II = 'draw';
 		setConditionLine();
 	}
 }
-
-//It'll be called when background-color or Home icon or Reset icon is clicked
-function reset_II(){
-	for(var i=0; i < 9; i++){
-		table_II[i] = 0;
-		filled_II[i] = 0;
-	}
-	cell0_II.html("");
-	cell1_II.html("");
-	cell2_II.html("");
-	cell3_II.html("");
-	cell4_II.html("");
-	cell5_II.html("");
-	cell6_II.html("");
-	cell7_II.html("");
-	cell8_II.html("");
-
-	if(isPlaying_II == 0){
-		if(winner_II == 'x'){
-			$('#II-gamePlay #realPlayerOnePart .conditionPart, #II-gamePlay #realPlayerTwoPart .conditionPart').css({
-				'background-color':'#ffffff' //white
-			});
-			$('#II-gamePlay #realPlayerTwoPart .conditionPart').hide();
-		}
-		else if(winner_II == 'o'){
-			$('#II-gamePlay #realPlayerOnePart .conditionPart, #II-gamePlay #realPlayerTwoPart .conditionPart').css({
-				'background-color':'#ffffff' //white
-			});
-			$('#II-gamePlay #realPlayerOnePart .conditionPart').hide();
-		}
-		else{ // if game was DRAW
-			// Next starter will be selected in RANDOM
-			var temp = Math.floor(Math.random() * 2);
-			if(temp == 0){
-				turn_II = 1;
-				$('#II-gamePlay #realPlayerTwoPart .conditionPart').hide();
-			}
-			else{ // temp is 1
-				turn_II = 2;
-				$('#II-gamePlay #realPlayerOnePart .conditionPart').hide();
-			}
-		}
-	}
-	else{
-		if(turn_II == 1){ // X turn
-			turn_II == 2; // Make it O turn
-		}
-		else{ // O turn
-			turn_II == 1; // Make it X turn
-		}
-	}
-}
-
 
 function setConditionLine(){
 	if(isPlaying_II == 0){ // The game is FINISHED
@@ -202,6 +146,12 @@ function setConditionLine(){
 			$('#II-gamePlay #realPlayerTwoPart .conditionPart').css({
 				'background-color':'#D91E18' //red
 			});
+			$('#II-gamePlay #realPlayerOnePart .XorO p').css({
+				'color':'#00B16A' //green
+			});
+			$('#II-gamePlay #realPlayerTwoPart .XorO p').css({
+				'color':'#D91E18' //red
+			});
 
 			turn_II = 1; // X will start the next game
 		} 
@@ -213,6 +163,12 @@ function setConditionLine(){
 			});
 			$('#II-gamePlay #realPlayerOnePart .conditionPart').css({
 				'background-color':'#D91E18' //red
+			});
+			$('#II-gamePlay #realPlayerTwoPart .XorO p').css({
+				'color':'#00B16A' //green
+			});
+			$('#II-gamePlay #realPlayerOnePart .XorO p').css({
+				'color':'#D91E18' //red
 			});
 
 			turn_II = 2; // O will start the next game
@@ -243,6 +199,70 @@ function setConditionLine(){
 		else{ // turn is 2 (O)
 			$('#II-gamePlay #realPlayerOnePart .conditionPart').hide();
 			$('#II-gamePlay #realPlayerTwoPart .conditionPart').show();
+		}
+	}
+}
+
+//It'll be called when Back icon or Home icon or Reset icon is clicked
+function reset_II(){
+	for(var i=0; i < 9; i++){
+		table_II[i] = 0;
+		filled_II[i] = 0;
+	}
+	cell0_II.html("");
+	cell1_II.html("");
+	cell2_II.html("");
+	cell3_II.html("");
+	cell4_II.html("");
+	cell5_II.html("");
+	cell6_II.html("");
+	cell7_II.html("");
+	cell8_II.html("");
+
+	if(isPlaying_II == 0){
+		if(winner_II == 'x'){
+			$('#II-gamePlay #realPlayerOnePart .conditionPart, #II-gamePlay #realPlayerTwoPart .conditionPart').css({
+				'background-color':'#ffffff' //white
+			});
+			$('#II-gamePlay #realPlayerOnePart .XorO p').css({
+				'color':'#ffffff' //white
+			});
+			$('#II-gamePlay #realPlayerTwoPart .XorO p').css({
+				'color':'#ffffff' //white
+			});
+			$('#II-gamePlay #realPlayerTwoPart .conditionPart').hide();
+		}
+		else if(winner_II == 'o'){
+			$('#II-gamePlay #realPlayerOnePart .conditionPart, #II-gamePlay #realPlayerTwoPart .conditionPart').css({
+				'background-color':'#ffffff' //white
+			});
+			$('#II-gamePlay #realPlayerOnePart .XorO p').css({
+				'color':'#ffffff' //white
+			});
+			$('#II-gamePlay #realPlayerTwoPart .XorO p').css({
+				'color':'#ffffff' //white
+			});
+			$('#II-gamePlay #realPlayerOnePart .conditionPart').hide();
+		}
+		else{ // if game was DRAW
+			// Next starter will be selected in RANDOM
+			var temp = Math.floor(Math.random() * 2);
+			if(temp == 0){
+				turn_II = 1;
+				$('#II-gamePlay #realPlayerTwoPart .conditionPart').hide();
+			}
+			else{ // temp is 1
+				turn_II = 2;
+				$('#II-gamePlay #realPlayerOnePart .conditionPart').hide();
+			}
+		}
+	}
+	else{
+		if(turn_II == 1){ // X turn
+			turn_II == 2; // Make it O turn
+		}
+		else{ // O turn
+			turn_II == 1; // Make it X turn
 		}
 	}
 }

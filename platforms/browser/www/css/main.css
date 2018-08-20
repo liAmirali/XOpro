@@ -26,8 +26,12 @@ input, button{
 	outline: none;
 }
 
+button:active{
+	padding: 0;
+}
+
 #wrapper{
-	/* width & height are in ("JS/setWandH.js"); */
+	/* width & height are in ("js/setWandH.js"); */
 
 	position: relative;
 	z-index: 1;
@@ -88,23 +92,4 @@ input, button{
 	left: 50%;
 	transform: translate(-50%,-50%);
 	display: block;
-}
-
-.nav .logoNavDiv{
-	width: 50%;
-	height: 100%;
-
-	display: inline-block;
-	float: left;
-}
-
-.nav .logoNavDiv p{
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-	text-align: center;
-
-	font-size: 25px;
-	font-family: 'knarfart';
-	color: white;
 }
