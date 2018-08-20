@@ -1,6 +1,3 @@
-var width = window.innerWidth;
-var height = window.innerHeight;
-
 // nav >>>
 
 $('#page-31 , #page-32').show();
