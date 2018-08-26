@@ -5,6 +5,8 @@
 	position: absolute;
 	z-index: 6;
 
+	display: none;
+
 	background: linear-gradient(to left top, #333333, #2D2D2D);
 }
 

@@ -5,9 +5,10 @@
 	position: absolute;
 	z-index: 6;
 
-	display: none;
+	/*display: none;*/
 
-	background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+	/*background-image: linear-gradient(to left top, #f77062 0%, #fe5196 100%);*/
+	background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
 }
 
 #page-info .nav{}
@@ -221,4 +222,5 @@
 	position: relative;
 	top: 2px;
 	color: #FD406E;
+	/*color: white;*/
 }

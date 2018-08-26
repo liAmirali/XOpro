@@ -30,22 +30,23 @@ setTimeout(function(){
 		'width': (temp + 70) + "px" // +70 reason: +10 because of right padding of h3 holder div
 								    //             +60 because of beauty
 	});
-}, 25);
-setTimeout(function(){
+
 	temp = $('#page-info .rateUs .infoPart-nav > div:first-child').width();
 	$('#page-info .rateUs .infoPart-nav > div:last-child').css({
 		'width': (temp + 70) + "px" // +70 reason: +10 because of right padding of h3 holder div
 								    //             +60 because of beauty
 	});
+
+	temp = $('#page-info .infoPart-details .eachDetail .contactIcon').height();
+	$('#page-info .contactDeveloper .infoPart-details .eachDetail .contactIcon').css({
+		'width': temp + "px"
+	});
+	$('#page-info .infoPart-details .eachDetail .contactTxt').css({
+		'width': (width - temp) + "px"
+	});
 }, 25);
 
-temp = $('#page-info .infoPart-details .eachDetail .contactIcon').height();
-$('#page-info .contactDeveloper .infoPart-details .eachDetail .contactIcon').css({
-	'width': temp + "px"
-});
-$('#page-info .infoPart-details .eachDetail .contactTxt').css({
-	'width': (width - temp) + "px"
-});
+
 
 setTimeout(function(){
 	$('#page-info').hide()
