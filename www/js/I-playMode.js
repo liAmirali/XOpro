@@ -540,7 +540,7 @@ function reset_I(){
 		attO();
 	}
 	else{
-		var temp = Math.floor(Math.random() * 2);
+		temp = Math.floor(Math.random() * 2);
 		if(temp == 0){
 			turn_I = 1;
 		}

@@ -1,0 +1,224 @@
+#page-info{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	z-index: 6;
+
+	display: none;
+
+	background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+}
+
+#page-info .nav{}
+
+#page-info .infoParts{
+	width: 100%;
+	height: 80%;
+}
+
+#page-info .infoParts > div{
+	width: 100%;
+	height: auto;
+
+	margin-bottom: 50px; 
+}
+
+#page-info .infoParts > div:last-child{
+	margin-bottom: 0px;
+}
+
+#page-info .infoParts > div > .infoPart-nav{
+	width: 100%;
+	height: 45px;
+
+	margin-bottom: 10px; 
+
+	position: relative;
+}
+
+#page-info .infoParts > div > .infoPart-nav > div:first-child{
+	width: auto;
+	height: auto;
+
+	padding-right: 10px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+	display: inline-block;
+	float: right;
+}
+
+#page-info .infoParts > div > .infoPart-nav h3{
+	display: inline-block;
+	margin: 0;
+
+	font-weight: normal;
+	font-size: 17px;
+	font-family: 'IRANSansWeb';
+	color: white;
+}
+
+#page-info .infoParts > div > .infoPart-nav > div:last-child{
+	/* width is in js/setWandH.js */ 
+	height: 3px;
+
+	clear: right;
+	display: inline-block;
+
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+#page-info .infoParts > div > .infoPart-nav .navUnderline{
+	width: 0%;
+	height: 100%;
+
+	float: right;
+
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	background-color: white;
+}
+
+.showInfoNavUnderline{
+	animation-name: showInfoNavUnderline;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes showInfoNavUnderline{
+	0%{ width: 0%; }
+	100%{ width: 100%; }
+}
+
+.hideInfoNavUnderline{
+	animation-name: hideInfoNavUnderline;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hideInfoNavUnderline{
+	0%{ width: 100%; }
+	100%{ width: 0%; }
+}
+
+#page-info .infoParts .infoPart-details{
+	width: 100%;
+	height: auto;
+}
+
+#page-info .infoParts .infoPart-details .eachDetail{
+	width: 100%;
+	height: 50px;
+}
+#page-info .infoParts .rateUs .infoPart-details .eachDetail{
+	height: 70px !important;
+}
+
+#page-info .infoParts .infoPart-details .eachDetail .contactIcon,
+#page-info .infoParts .infoPart-details .eachDetail .contactTxt{
+	/*div:first-child : width is the same as height in js/setWandH.js */
+	/*div:last-child :  width is the rest of div:first-child width in js/setWandH.js */
+	height: 100%;
+
+	float: right;
+}
+
+#page-info .infoParts .infoPart-details .eachDetail .contactIcon > img{
+	width: 40%;
+	height: 40%;
+
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#page-info .infoParts .infoPart-details .eachDetail .contactTxt > p{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: right;
+	direction: rtl;
+
+	font-family: 'IRANSansWeb';
+	font-size: 13px;
+	color: white;
+}
+
+#page-info .infoParts .infoPart-details .eachDetail .contactTxt > p span{
+	color: black;
+}
+
+#page-info .infoParts .rateUs .infoPart-details .eachDetail .eachStoreRate{
+	width: 70px; /*The same as .rateUs .eachDetail height*/
+	height: 100%;
+
+	display: inline-block;
+	float: right;
+}
+
+#page-info .infoParts .rateUs .infoPart-details .eachDetail .eachStoreRate .storeIcon{
+	width: 100%;
+	height: 65%;
+}
+
+#page-info .infoParts .rateUs .infoPart-details .eachDetail .eachStoreRate .storeIcon img{
+	width: auto;
+	height: 50%;
+
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+#page-info .infoParts .rateUs .infoPart-details .eachDetail .eachStoreRate .storeName{
+	width: 100%;
+	height: 35%;
+}
+
+#page-info .infoParts .rateUs .infoPart-details .eachDetail .eachStoreRate .storeName p{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+
+	font-size: 15px;
+	font-family: 'IRANSansWeb';
+	color: black;
+}
+
+#page-info .infoParts .rateUs .infoPart-details .eachDetail .eachStoreRate .storeName p a{
+	text-decoration: none;
+	color: currentColor;
+}
+
+#page-info .developedBy{
+	width: 100%;
+	height: 10%;
+}
+
+#page-info .developedBy p{
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+	font-size: 13px;
+	font-family: 'HelveticaNeueCyr-Light';
+	color: white;
+	letter-spacing: 1px;
+}
+
+#page-info .developedBy p span{
+	font-family: 'googleIcon';
+
+	position: relative;
+	top: 2px;
+	color: #FD406E;
+}

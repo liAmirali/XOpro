@@ -59,6 +59,7 @@ button:active{
 	height: 10%;
 }
 
+.nav .infoIconDiv,
 .nav .backIconDiv,
 .nav .resetIconDiv,
 .nav .homeIconDiv
@@ -80,10 +81,8 @@ button:active{
 	display: inline-block;
 }
 
-.nav .backIconDiv .iconNavHolder img,
-.nav .resetIconDiv .iconNavHolder img,
-.nav .homeIconDiv .iconNavHolder img
-{
+
+.nav .iconNavHolder img{
 	width: 50%;
 	height: 50%;
 

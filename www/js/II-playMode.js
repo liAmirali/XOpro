@@ -1,4 +1,4 @@
-var temp = Math.floor(Math.random() * 2);
+temp = Math.floor(Math.random() * 2);
 if(temp == 0){
 	turn_II = 1;
 	setConditionLine();
@@ -182,7 +182,7 @@ function setConditionLine(){
 
 
 			// Next starter will be selected in RANDOM
-			var temp = Math.floor(Math.random() * 2);
+			temp = Math.floor(Math.random() * 2);
 			if(temp == 0){
 				turn_II = 1;
 			}
@@ -246,7 +246,7 @@ function reset_II(){
 		}
 		else{ // if game was DRAW
 			// Next starter will be selected in RANDOM
-			var temp = Math.floor(Math.random() * 2);
+			temp = Math.floor(Math.random() * 2);
 			if(temp == 0){
 				turn_II = 1;
 				$('#II-gamePlay #realPlayerTwoPart .conditionPart').hide();

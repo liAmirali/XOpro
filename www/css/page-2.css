@@ -13,8 +13,10 @@
 	animation-duration: 0.5s !important;
 }
 
-
-
+#page-2 > .nav{
+	position: absolute;
+	top: 0;
+}
 
 #page-2 #onePlayer{
 	width: 100%;

@@ -1,3 +1,8 @@
+var temp;
+var temp1;
+var temp2;
+
+
 // nav >>>
 
 $('#page-31 , #page-32').show();
@@ -8,6 +13,67 @@ $('.nav .iconNavHolder').css('width', navH + "px");
 $('#page-31 , #page-32').hide();
 
 // nav <<<
+
+
+
+
+
+// page-info >>>
+
+setTimeout(function(){
+	$('#page-info').show()
+}, 20);
+
+setTimeout(function(){
+	temp = $('#page-info .contactDeveloper .infoPart-nav > div:first-child').width();
+	$('#page-info .contactDeveloper .infoPart-nav > div:last-child').css({
+		'width': (temp + 70) + "px" // +70 reason: +10 because of right padding of h3 holder div
+								    //             +60 because of beauty
+	});
+}, 25);
+setTimeout(function(){
+	temp = $('#page-info .rateUs .infoPart-nav > div:first-child').width();
+	$('#page-info .rateUs .infoPart-nav > div:last-child').css({
+		'width': (temp + 70) + "px" // +70 reason: +10 because of right padding of h3 holder div
+								    //             +60 because of beauty
+	});
+}, 25);
+
+temp = $('#page-info .infoPart-details .eachDetail .contactIcon').height();
+$('#page-info .contactDeveloper .infoPart-details .eachDetail .contactIcon').css({
+	'width': temp + "px"
+});
+$('#page-info .infoPart-details .eachDetail .contactTxt').css({
+	'width': (width - temp) + "px"
+});
+
+setTimeout(function(){
+	$('#page-info').hide()
+}, 30);
+
+
+
+$('#page-info .nav .backIconDiv .iconNavHolder').click(function(){
+	$('#page-info').removeClass('slideInDown');
+	$('#page-info').addClass('slideOutUp');
+
+	$('#page-info .infoPart-nav .navUnderline').removeClass('showInfoNavUnderline');
+	$('#page-info .infoPart-nav .navUnderline').addClass('hideInfoNavUnderline');
+
+	$('#page-info .infoPart-nav h3').removeClass('slideInRight');
+	$('#page-info .infoPart-nav h3').addClass('slideOutRight');
+
+	setTimeout(function(){
+		$('#page-info').hide();
+	}, 1000);
+
+	setTimeout(function(){
+		$('#page-info .infoPart-nav h3').hide();
+	}, 600);
+});
+
+
+// page-info <<<
 
 
 
@@ -47,6 +113,23 @@ setTimeout( function() {
 
 
 // page-2 >>>
+
+
+$('#page-2 .nav .infoIconDiv .iconNavHolder').click(function(){
+	$('#page-info').show();
+	$('#page-info').removeClass('slideOutUp');
+	$('#page-info').addClass('slideInDown');
+	setTimeout(function(){
+		$('#page-info .infoPart-nav .navUnderline').removeClass('hideInfoNavUnderline');
+		$('#page-info .infoPart-nav .navUnderline').addClass('showInfoNavUnderline');
+	}, 500);
+	setTimeout(function(){
+		$('#page-info .infoPart-nav h3').show();
+		$('#page-info .infoPart-nav h3').removeClass('slideOutRight');
+		$('#page-info .infoPart-nav h3').addClass('slideInRight');
+	}, 600);
+});
+
 
 var playMode = 0;
 
@@ -547,9 +630,9 @@ $('#page-51 #I-gamePlay .XorO , #page-52 #II-gamePlay .XorO').css({
 	'width': XorOHeight + "px"
 });
 
-var temp1 = $('.resultDiv .XorO').width();
-var temp2 = $('.resultDiv .conditionPart').width();
-var temp = width - (temp1 + temp2) - 5; // -5 is because of the right-margin of .conditionParts
+temp1 = $('.resultDiv .XorO').width();
+temp2 = $('.resultDiv .conditionPart').width();
+temp = width - (temp1 + temp2) - 5; // -5 is because of the right-margin of .conditionParts
 $('#page-51 #I-gamePlay .playerNamePart , #page-52 #II-gamePlay .playerNamePart').css({
 	'width': temp + 'px'
 });
