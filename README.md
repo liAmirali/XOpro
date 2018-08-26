@@ -14,4 +14,8 @@ Note: You have to resize the browser window to something like a phone screen. It
 
 You can download the apk file from here:
 
-[https://github.com/liAmirali/XOproMore/raw/master/XOpro-release.apk](https://github.com/liAmirali/XOproMore/raw/master/XOpro-release.apk)
+[https://xopro.blogfa.com](https://xopro.blogfa.com)
+
+Or from the direct downlod link:
+
+[https://dl.dropboxusercontent.com/s/q20z5qa331qw8ww/XOpro-release.apk](https://dl.dropboxusercontent.com/s/q20z5qa331qw8ww/XOpro-release.apk)
