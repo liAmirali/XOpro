@@ -143,11 +143,6 @@ $('#page-2 #onePlayer').click(function() {
 	$('#page-2 #playerOrPlayers div').addClass('hidePlayerorPlayersLineAnim');
 
 	setTimeout(function(){
-		$('#page-2 #twoPlayer').hide()
-		$('#page-2 #playerOrPlayers').hide()
-	}, 500);
-
-	setTimeout(function(){
 		$('#page-2 #onePlayer').css({
 			'height':'90%',
 			'transition':'0.5s'
@@ -158,10 +153,6 @@ $('#page-2 #onePlayer').click(function() {
 		$('#page-2').removeClass('slideInUp');
 		$('#page-2').addClass('slideOutDown');
 	}, 2000)
-
-	setTimeout(function(){
-		$('#page-2').hide();
-	}, 3000);
 
 	$('#page-31 #enterNameDiv #txtEnterName p').removeClass('mySlideInUp');
 	$('#page-31 #enterNameDiv #inputEnterName input').removeClass('mySlideInUp');
@@ -185,11 +176,6 @@ $('#page-2 #twoPlayer').click(function() {
 	$('#page-2 #playerOrPlayers div').addClass('hidePlayerorPlayersLineAnim');
 
 	setTimeout(function(){
-		$('#page-2 #onePlayer').hide()
-		$('#page-2 #playerOrPlayers').hide()
-	}, 500);
-
-	setTimeout(function(){
 		$('#page-2 #twoPlayer').css({
 			'height':'90%',
 			'transition':'0.5s'
@@ -198,10 +184,7 @@ $('#page-2 #twoPlayer').click(function() {
 
 	setTimeout(function(){
 		$('#page-2').addClass('slideOutDown');
-	}, 2000)
-	setTimeout(function(){
-		$('#page-2').hide();
-	}, 3000);
+	}, 2000);
 
 	if (isPage32AnimationRunned === 0){
 		// Another if on line 270
@@ -231,22 +214,17 @@ $('#page-2 #twoPlayer').click(function() {
 // page-31 >>>
 
 $('#page-31 .nav .backIconDiv .iconNavHolder').click(function(){
-	$('#page-2').show();
 	$('#page-2').removeClass('slideOutDown');
 	$('#page-2').addClass('slideInUp');
 
 	setTimeout(function(){
 		playMode = 0;
-
-		$('#page-31').hide();
 	}, 1000);
 
 	setTimeout(function(){
-		$('#page-2 #twoPlayer').show();
 		$('#page-2 #twoPlayer').removeClass('slideOutLeft');
 		$('#page-2 #twoPlayer').addClass('slideInLeft');
 
-		$('#page-2 #playerOrPlayers').show();
 		$('#page-2 #playerOrPlayers div').removeClass('hidePlayerorPlayersLineAnim');
 		$('#page-2 #playerOrPlayers div').addClass('showPlayerorPlayersLineAnim');
 	}, 2000);
@@ -260,21 +238,16 @@ $('#page-31 .nav .backIconDiv .iconNavHolder').click(function(){
 });
 
 $('#page-31 .nav .homeIconDiv .iconNavHolder').click(function(){
-	$('#page-2').show();
 	$('#page-2').removeClass('slideOutDown');
 	$('#page-2').addClass('slideInUp');
 
 	setTimeout(function(){
 		playMode = 0;
-
-		$('#page-31').hide();
 	}, 1000);
 
-	$('#page-2 #twoPlayer').show()
 	$('#page-2 #twoPlayer').removeClass('slideOutLeft');
 	$('#page-2 #twoPlayer').addClass('slideInLeft');
 
-	$('#page-2 #playerOrPlayers').show()
 	$('#page-2 #playerOrPlayers div').removeClass('hidePlayerorPlayersLineAnim');
 	$('#page-2 #playerOrPlayers div').addClass('showPlayerorPlayersLineAnim');
 
@@ -302,12 +275,12 @@ $('#page-31 #nextBtnEnterName button').click(function(){
 	 	$('#page-31').removeClass('slideInUp');
 	 	$('#page-31').addClass('slideOutDown');
 
-		setTimeout(function(){
+	 	setTimeout(function(){
 			$('#page-31').hide();
-		}, 1000)
+		}, 1000);
 		setTimeout(function(){
 			$('#page-31').removeClass('slideOutDown');
-		}, 2000)
+		}, 2000);
 
 		$('#page-31 #enterNameDiv p , #page-31 #enterNameDiv input').removeClass('mySlideInUp');
 	}
@@ -331,22 +304,17 @@ var nameInput = 1;
 
 $('#page-32 .nav .backIconDiv .iconNavHolder').click(function(){
 	if(nameInput === 1){
-		$('#page-2').show();
 		$('#page-2').removeClass('slideOutDown');
 		$('#page-2').addClass('slideInUp');
 
 		setTimeout(function(){
 			playMode = 0;
-
-			$('#page-32').hide();
 		}, 1000);
 
 		setTimeout(function(){
-			$('#page-2 #onePlayer').show();
 			$('#page-2 #onePlayer').removeClass('slideOutRight');
 			$('#page-2 #onePlayer').addClass('slideInRight');
 
-			$('#page-2 #playerOrPlayers').show();
 			$('#page-2 #playerOrPlayers div').removeClass('hidePlayerorPlayersLineAnim');
 			$('#page-2 #playerOrPlayers div').addClass('showPlayerorPlayersLineAnim');
 		}, 2000);
@@ -384,7 +352,6 @@ $('#page-32 .nav .backIconDiv .iconNavHolder').click(function(){
 });
 
 $('#page-32 .nav .homeIconDiv .iconNavHolder').click(function(){
-	$('#page-2').show();
 	$('#page-2').removeClass('slideOutDown');
 	$('#page-2').addClass('slideInUp');
 
@@ -404,12 +371,7 @@ $('#page-32 .nav .homeIconDiv .iconNavHolder').click(function(){
 
 	setTimeout(function(){
 		playMode = 0;
-
-		$('#page-32').hide();
 	}, 1000);
-
-	$('#page-2 #onePlayer').show()
-	$('#page-2 #playerOrPlayers').show()
 
 	$('#page-2 #onePlayer').removeClass('slideOutRight');
 	$('#page-2 #onePlayer').addClass('slideInRight');

@@ -53,145 +53,145 @@ function attO() {
 			cell2_I.html(o);
 			table_I[2] = 2;
 			filled_I[2] = 1;
-			checkWinO_I();
+			checkWinO_I("horTop showWinnerLine100");
 	}
 	else if(table_I[1] == 2 && table_I[2] == 2 && filled_I[0] == 0){
 			cell0_I.html(o);
 			table_I[0] = 2;
 			filled_I[0] = 1;
-			checkWinO_I();
+			checkWinO_I("horTop showWinnerLine100");
 	}
 	else if(table_I[0] == 2 && table_I[2] == 2 && filled_I[1] == 0){
 			cell1_I.html(o);
 			table_I[1] = 2;
 			filled_I[1] = 1;
-			checkWinO_I();
+			checkWinO_I("horTop showWinnerLine100");
 	}
 	else if(table_I[3] == 2 && table_I[4] == 2 && filled_I[5] == 0){
 			cell5_I.html(o);
 			table_I[5] = 2;
 			filled_I[5] = 1;
-			checkWinO_I();
+			checkWinO_I("horMiddle showWinnerLine100");
 	}
 	else if(table_I[4] == 2 && table_I[5] == 2 && filled_I[3] == 0){
 			cell3_I.html(o);
 			table_I[3] = 2;
 			filled_I[3] =1
-			checkWinO_I();
+			checkWinO_I("horMiddle showWinnerLine100");
 	}
 	else if(table_I[3] == 2 && table_I[5] == 2 && filled_I[4] == 0){
 			cell4_I.html(o);
 			table_I[4] = 2;
 			filled_I[4] = 1;
-			checkWinO_I();
+			checkWinO_I("horMiddle showWinnerLine100");
 	}
 	else if(table_I[6] == 2 && table_I[7] == 2 && filled_I[8] == 0){
 			cell8_I.html(o);
 			table_I[8] = 2;
 			filled_I[8] = 1;
-			checkWinO_I();
+			checkWinO_I("horBottom showWinnerLine100");
 	}
 	else if(table_I[7] == 2 && table_I[8] == 2 && filled_I[6] == 0){
 			cell6_I.html(o);
 			table_I[6] = 2;
 			filled_I[6] = 1;
-			checkWinO_I();
+			checkWinO_I("horBottom showWinnerLine100");
 	}
 	else if(table_I[6] == 2 && table_I[8] == 2 && filled_I[7] == 0){
 			cell7_I.html(o);
 			table_I[7] = 2;
 			filled_I[7] = 1;
-			checkWinO_I();
+			checkWinO_I("horBottom showWinnerLine100");
 	}
 	else if(table_I[0] == 2 && table_I[3] == 2 && filled_I[6] == 0){
 			cell6_I.html(o);
 			table_I[6] = 2;
 			filled_I[6] = 1;
-			checkWinO_I();
+			checkWinO_I("verLeft showWinnerLine100");
 	}
 	else if(table_I[3] == 2 && table_I[6] == 2 && filled_I[0] == 0){
 			cell0_I.html(o);
 			table_I[0] = 2;
 			filled_I[0] = 1;
-			checkWinO_I();
+			checkWinO_I("verLeft showWinnerLine100");
 	}
 	else if(table_I[0] == 2 && table_I[6] == 2 && filled_I[3] == 0){
 			cell3_I.html(o);
 			table_I[3] = 2;
 			filled_I[3] = 1;
-			checkWinO_I();
+			checkWinO_I("verLeft showWinnerLine100");
 	}
 	else if(table_I[1] == 2 && table_I[4] == 2 && filled_I[7] == 0){
 			cell7_I.html(o);
 			table_I[7] = 2;
 			filled_I[7] = 1;
-			checkWinO_I();
+			checkWinO_I("verMiddle showWinnerLine100");
 	}
 	else if(table_I[4] == 2 && table_I[7] == 2 && filled_I[1] == 0){
 			cell1_I.html(o);
 			table_I[1] = 2;
 			filled_I[1] = 2;
-			checkWinO_I();
+			checkWinO_I("verMiddle showWinnerLine100");
 	}
 	else if(table_I[1] == 2 && table_I[7] == 2 && filled_I[4] == 0){
 			cell4_I.html(o);
 			table_I[4] = 2;
 			filled_I[4] = 1;
-			checkWinO_I();
+			checkWinO_I("verMiddle showWinnerLine100");
 	}
 	else if(table_I[2] == 2 && table_I[5] == 2 && filled_I[8] == 0){
 			cell8_I.html(o);
 			table_I[8] = 2;
 			filled_I[8] = 1;
-			checkWinO_I();
+			checkWinO_I("verRight showWinnerLine100");
 	}
 	else if(table_I[5] == 2 && table_I[8] == 2 && filled_I[2] == 0){
 			cell2_I.html(o);
 			table_I[2] = 2;
 			filled_I[2] = 1;
-			checkWinO_I();
+			checkWinO_I("verRight showWinnerLine100");
 	}
 	else if(table_I[2] == 2 && table_I[8] == 2 && filled_I[5] == 0){
 			cell5_I.html(o);
 			table_I[5] = 2;
 			filled_I[5] = 2;
-			checkWinO_I();
+			checkWinO_I("verRight showWinnerLine100");
 	}
 	else if(table_I[0] == 2 && table_I[4] == 2 && filled_I[8] == 0){
 			cell8_I.html(o);
 			table_I[8] = 2;
 			filled_I[8] = 1;
-			checkWinO_I();
+			checkWinO_I("diaLeftTop showWinnerLine120");
 	}
 	else if(table_I[4] == 2 && table_I[8] == 2 && filled_I[0] == 0){
 			cell0_I.html(o);
 			table_I[0] = 2;
 			filled_I[0] = 1;
-			checkWinO_I();
+			checkWinO_I("diaLeftTop showWinnerLine120");
 	}
 	else if(table_I[0] == 2 && table_I[8] == 2 && filled_I[4] == 0){
 			cell4_I.html(o);
 			table_I[4] = 2;
 			filled_I[4] = 1;
-			checkWinO_I();
+			checkWinO_I("diaLeftTop showWinnerLine120");
 	}
 	else if(table_I[2] == 2 && table_I[4] == 2 && filled_I[6] == 0){
 			cell6_I.html(o);
 			table_I[6] = 2;
 			filled_I[6] = 1;
-			checkWinO_I();
+			checkWinO_I("diaRightTop showWinnerLine120");
 	}
 	else if(table_I[4] == 2 && table_I[6] == 2 && filled_I[2] == 0){
 			cell2_I.html(o);
 			table_I[2] = 2;
 			filled_I[2] = 1;
-			checkWinO_I();
+			checkWinO_I("diaRightTop showWinnerLine120");
 	}
 	else if(table_I[2] == 2 && table_I[6] == 2 && filled_I[4] == 0){
 			cell4_I.html(o);
 			table_I[4] = 2;
 			filled_I[4] = 1
-			checkWinO_I();
+			checkWinO_I("diaRightTop showWinnerLine120");
 	}
 	else{
 		defO();
@@ -443,44 +443,59 @@ function checkDraw_I(){
 	}
 }
 
-function checkWinX_I(){
-	if( table_I[0] == 1 && table_I[1] == 1 && table_I[2] == 1 || 
-		table_I[3] == 1 && table_I[4] == 1 && table_I[5] == 1 ||
-		table_I[6] == 1 && table_I[7] == 1 && table_I[8] == 1 ||
-		table_I[0] == 1 && table_I[3] == 1 && table_I[6] == 1 ||
-		table_I[1] == 1 && table_I[4] == 1 && table_I[7] == 1 ||
-		table_I[2] == 1 && table_I[5] == 1 && table_I[8] == 1 ||
-		table_I[0] == 1 && table_I[4] == 1 && table_I[8] == 1 ||
-		table_I[2] == 1 && table_I[4] == 1 && table_I[6] == 1)
-	{
-
-		$('#I-gamePlay .conditionPart').show();
-		$('#I-gamePlay #realPlayerPart .conditionPart').css({
-			'background-color': '#00B16A' //green
-		});
-		$('#I-gamePlay #computerPart .conditionPart').css({
-			'background-color': '#D91E18' //red
-		});
-		$('#I-gamePlay #realPlayerPart .XorO p').css({
-			'color': '#00B16A' //green
-		});
-		$('#I-gamePlay #computerPart .XorO p').css({
-			'color': '#D91E18' //red
-		});
-
-		for (var i = 0; i < 9; i++) {
-			filled_I[i] = 1;
-		}
-		isPlaying_I = 0;
-		winner_I = 'x';
-	 	return true;
-	} 
-	else{
-		return false;
+function checkWinX_I(a){
+	if(table_I[0] == 1 && table_I[1] == 1 && table_I[2] == 1){ // horTop
+		xWins_I("horTop showWinnerLine100");
+	}
+	else if(table_I[3] == 1 && table_I[4] == 1 && table_I[5] == 1){ // horMiddle
+		xWins_I("horMiddle showWinnerLine100");
+	}
+	else if(table_I[6] == 1 && table_I[7] == 1 && table_I[8] == 1){ // horBottom
+		xWins_I("horBottom showWinnerLine100");
+	}
+	else if(table_I[0] == 1 && table_I[3] == 1 && table_I[6] == 1){ // verLeft
+		xWins_I("verLeft showWinnerLine100");
+	}
+	else if(table_I[1] == 1 && table_I[4] == 1 && table_I[7] == 1){ // verMiddle
+		xWins_I("verMiddle showWinnerLine100");
+	}
+	else if(table_I[2] == 1 && table_I[5] == 1 && table_I[8] == 1){ // verRight
+		xWins_I("verRight showWinnerLine100");
+	}
+	else if(table_I[0] == 1 && table_I[4] == 1 && table_I[8] == 1){ // diaLeftTop
+		xWins_I("diaLeftTop showWinnerLine120");
+	}
+	else if(table_I[2] == 1 && table_I[4] == 1 && table_I[6] == 1){ // diaRightTop
+		xWins_I("diaRightTop showWinnerLine120");
 	}
 }
 
-function checkWinO_I(){
+function xWins_I(a){
+	$("#I-gamePlay .winnerLine").show();
+	$("#I-gamePlay .winnerLine").addClass(a);
+
+	$('#I-gamePlay .conditionPart').show();
+	$('#I-gamePlay #realPlayerPart .conditionPart').css({
+		'background-color': '#00B16A' //green
+	});
+	$('#I-gamePlay #computerPart .conditionPart').css({
+		'background-color': '#D91E18' //red
+	});
+	$('#I-gamePlay #realPlayerPart .XorO p').css({
+		'color': '#00B16A' //green
+	});
+	$('#I-gamePlay #computerPart .XorO p').css({
+		'color': '#D91E18' //red
+	});
+
+	for (var i = 0; i < 9; i++) {
+		filled_I[i] = 1;
+	}
+	isPlaying_I = 0;
+	winner_I = 'x';
+}
+
+function checkWinO_I(a){
 	if (table_I[0] == 2 && table_I[1] == 2 && table_I[2] == 2 ||
 		table_I[3] == 2 && table_I[4] == 2 && table_I[5] == 2 ||
 		table_I[6] == 2 && table_I[7] == 2 && table_I[8] == 2 ||
@@ -490,6 +505,9 @@ function checkWinO_I(){
 		table_I[0] == 2 && table_I[4] == 2 && table_I[8] == 2 ||
 		table_I[2] == 2 && table_I[4] == 2 && table_I[6] == 2 )
 	{
+		$("#I-gamePlay .winnerLine").show();
+		$("#I-gamePlay .winnerLine").addClass(a);
+
 		$('#I-gamePlay .conditionPart').show();
 		$('#I-gamePlay #realPlayerPart .conditionPart').css({
 			'background-color': '#D91E18' //red
@@ -554,4 +572,7 @@ function reset_I(){
 	$('#I-gamePlay #computerPart .XorO p, #I-gamePlay #realPlayerPart .XorO p').css({
 		'color': '#ffffff'
 	});
+
+	$('#I-gamePlay .winnerLine').removeClass('horTop horMiddle horBottom verLeft verMiddle verRight diaLeftTop diaRightTop showWinnerLine100 showWinnerLine120');
+	$('#I-gamePlay .winnerLine').hide();
 }
