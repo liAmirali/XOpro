@@ -3,13 +3,13 @@
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.liamirali.xopro"
     versionCode = "10"
-    version     = "1.0.0" >
+    version     = "1.1.0" >
 <!-- versionCode is optional and Android only -->
 
   <name>XO pro</name>
 
   <description>
-      XO pro v1.0.0
+      XO pro v1.1.0
   </description>
 
   <author href="https://instagram.com/liamirali" email="liamirali.lotfi@gmail.com">
