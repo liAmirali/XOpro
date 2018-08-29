@@ -18,4 +18,4 @@ You can download the apk file from here:
 
 Or from the direct downlod link:
 
-[https://dl.dropboxusercontent.com/s/q20z5qa331qw8ww/XOpro-release.apk](https://dl.dropboxusercontent.com/s/q20z5qa331qw8ww/XOpro-release.apk)
+[https://dl.dropboxusercontent.com/s/uo44yzc6cqnw9m9/XOpro-release.apk](https://dl.dropboxusercontent.com/s/uo44yzc6cqnw9m9/XOpro-release.apk)
