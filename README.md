@@ -4,7 +4,7 @@
 
 ### Web Game (html file)
 
-In your browser, open the file:
+In your browser, open this file:
 
     /www/index.html
 

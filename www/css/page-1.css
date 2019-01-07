@@ -49,9 +49,8 @@
 }
 
 #page-1 div:last-child p span{
-	font-family: 'googleIcon';
-
 	position: relative;
 	top: 2px;
 	color: #FD406E;
+	font-size: 18px;
 }
