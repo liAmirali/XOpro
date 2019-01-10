@@ -5,8 +5,6 @@
 	position: absolute;
 	z-index: 6;
 
-	display: block !important;
-
 	/*background-image: linear-gradient(to left top, #f77062 0%, #fe5196 100%);*/
 	background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
 }
@@ -217,7 +215,7 @@
 }
 
 #page-info .developedBy p span{
-	font-family: 'googleIcon';
+	/*font-family: 'googleIcon';*/
 
 	position: relative;
 	top: 2px;
