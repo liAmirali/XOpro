@@ -74,6 +74,18 @@
 	transition: 0.4s ease-in-out;
 }
 
+#page-32 #enterNameDiv .holder #inputEnterName input::-webkit-input-placeholder{
+	color: black !important;
+	opacity: 0.4;
+}
+#page-32 #enterNameDiv .holder #inputEnterName input:-moz-placeholder{
+	color: black !important;
+	opacity: 0.4;
+}
+#page-32 #enterNameDiv .holder #inputEnterName input:-ms-input-placeholder{
+	color: black !important;
+	opacity: 0.4;
+}
 #page-32 #enterNameDiv .holder #inputEnterName input::placeholder{
 	color: black !important;
 	opacity: 0.4;
