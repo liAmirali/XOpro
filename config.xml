@@ -2,15 +2,15 @@
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
     id          = "com.liamirali.xopro"
-    versionCode = "140010201"
-    version     = "1.2.1" >
+    versionCode = "140010202"
+    version     = "1.2.2" >
 <!-- versionCode is optional and Android only -->
 <!-- Min API Level is 14 = Android 4.0 -->
 
   <name>XO pro</name>
 
   <description>
-      XO pro v1.2.1
+      XO pro v1.2.2
   </description>
 
   <author href="https://github.com/liamirali" email="liamirali.lotfi@gmail.com">
