@@ -5,6 +5,8 @@
 	position: absolute;
 	z-index: 6;
 
+	display: block !important;
+
 	/*background-image: linear-gradient(to left top, #f77062 0%, #fe5196 100%);*/
 	background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
 }
@@ -13,7 +15,7 @@
 
 #page-info .infoParts{
 	width: 100%;
-	height: 80%;
+	height: 75%;
 }
 
 #page-info .infoParts > div{
@@ -221,4 +223,21 @@
 	top: 2px;
 	color: #FD406E;
 	/*color: white;*/
+}
+
+#page-info .appVersion{
+	width: 100%;
+	height: 5%;
+}
+
+#page-info .appVersion p{
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+	font-size: 10px;
+	font-family: 'HelveticaNeueCyr-Light';
+	color: white;
+	letter-spacing: 1px;
 }

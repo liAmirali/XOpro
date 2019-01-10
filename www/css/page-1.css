@@ -8,12 +8,12 @@
 	background: linear-gradient(to left top, #333333, #2D2D2D);
 }
 
-#page-1 div:first-child{
+#page-1 div:nth-child(1){
 	width: 100%;
-	height: 80%;
+	height: 75%;
 }
 
-#page-1 div:first-child p{
+#page-1 div:nth-child(1) p{
 	font-size: 55px;
 	color: white;
 	font-family: 'knarfart';
@@ -25,15 +25,12 @@
 	transform: translateY(-50%);
 }
 
-#page-1 div:last-child{
+#page-1 div:nth-child(2){
 	width: 100%;
 	height: 20%;
-
-	position: absolute;
-	bottom: 0;
 }
 
-#page-1 div:last-child p{
+#page-1 div:nth-child(2) p{
 	text-align: center;
 	position: relative;
 	top: 50%;
@@ -45,12 +42,32 @@
 	letter-spacing: 1px;
 
 	animation-duration: 0.5s;
-	animation-delay: 0;
+	animation-delay: 0.5s;
 }
 
-#page-1 div:last-child p span{
+#page-1 div:nth-child(2) p span{
 	position: relative;
 	top: 2px;
 	color: #FD406E;
 	font-size: 18px;
+}
+
+#page-1 div:nth-child(3){
+	width: 100%;
+	height: 5%;
+}
+
+#page-1 div:nth-child(3) p{
+	text-align: center;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+
+	font-size: 13px;
+	font-family: 'HelveticaNeueCyr-Light';
+	color: #aaaaaa;
+	letter-spacing: 1px;
+
+	animation-duration: 0.5s;
+	animation-delay: 0.5s;
 }
