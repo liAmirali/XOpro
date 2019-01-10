@@ -138,7 +138,6 @@ $('#page-2 #onePlayer').click(function() {
 	playMode = 1;
 
 	$('#page-31').show();
-	$('#page-32').hide();
 
 	$('#page-2 #twoPlayer').addClass('slideOutLeft');
 	$('#page-2 #playerOrPlayers div').addClass('hidePlayerorPlayersLineAnim');
@@ -172,7 +171,6 @@ $('#page-2 #twoPlayer').click(function() {
 	playMode = 2;
 
 	$('#page-32').show();
-	$('#page-31').hide();
 
 	$('#page-2 #onePlayer').addClass('slideOutRight');
 	$('#page-2 #playerOrPlayers div').addClass('hidePlayerorPlayersLineAnim');
